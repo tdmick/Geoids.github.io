@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: navy;
+    clear: left;
+    text-align: center;
+}
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Distance Calculator</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li>Select State</li>
+    <li><form action="/action_page.php">
+        <select name="States">
+        <option value="California">California</option>
+        <option value="Utah">Utah</option>
+        </select>
+        </form></li>
+        <br><br>
+    <li>Select Starting Locaiton</li>
+    <li>
+        <form action="/action_page.php">
+        <input name="location" type="text">
+        </form></li>  
+      <br><br>
+    <li>Select Time of Day</li>
+     <li>
+          <form>
+             <select name="time">
+  	            <option value="5AM">5AM</option>
+                <option value="6AM">6AM</option>
+                <option value="7AM">7AM</option>
+                <option value="8PM">8PM</option>
+                <option value="9AM">9AM</option>
+                <option value="10AM">10AM</option>
+                <option value="11AM">11AM</option>
+                <option value="12PM">12PM</option>
+                <option value="1PM">1PM</option>
+                <option value="2PM">2PM</option>
+                <option value="3PM">3PM</option>
+                <option value="4PM">4PM</option>
+                <option value="5PM">5PM</option>
+                <option value="6PM">6PM</option>
+                <option value="7PM">7PM</option>
+                <option value="8PM">8PM</option>
+                <option value="9PM">9PM</option>
+                <option value="10PM">10PM</option>
+                <option value="11PM">11PM</option>
+              </select>
+            </form> 
+      </li>
+      <br><br>
+    <li><button type="button">CALCULATE</button></li>
+  </ul>
+</nav>
+
+<article>
+  <h1>MAP</h1>
+  <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><small><a href="//byu.maps.arcgis.com/apps/Embed/index.html?webmap=83f2cf2dbe57486faf1bf8579ba46891&amp;extent=-117.3699,37.1101,-105.8782,42.1004&home=true&zoom=true&scale=true&search=true&searchextent=true&details=true&legendlayers=true&active_panel=details&basemap_gallery=true&disable_scroll=true&theme=light" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Try 1" src="//byu.maps.arcgis.com/apps/Embed/index.html?webmap=83f2cf2dbe57486faf1bf8579ba46891&amp;extent=-117.3699,37.1101,-105.8782,42.1004&home=true&zoom=true&previewImage=true&scale=true&search=true&searchextent=true&details=true&legendlayers=true&active_panel=details&basemap_gallery=true&disable_scroll=true&theme=light"></iframe></div>
+</article>
+
+<footer>Team Geoid No Rights Reserved</footer>
+
+</div>
+
+</body>
+</html>
