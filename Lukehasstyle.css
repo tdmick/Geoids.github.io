@@ -1,3 +1,7 @@
+		.h1{
+			color:teal;
+			text-transform:lowercase;
+		}
   .embed-container {
             position: relative;
             padding-bottom: 80%;
