@@ -8,28 +8,32 @@ div.container {
 }
 header, footer {
     padding: 1em;
-    color: white;
+    color: moccasin;
     background-color: navy;
     clear: left;
     text-align: center;
 }
 nav {
     float: left;
-    max-width: 160px;
-    margin: 0;
+    max-width: 200px;
+    margin: 1;
     padding: 1em;
+    text-align: center;
+    color: moccasin;
+    background-color: cornflowerblue;
 }
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
    
 nav ul a {
     text-decoration: none;
+    text-align: center;
 }
 article {
     margin-left: 170px;
-    border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
 }
@@ -52,13 +56,13 @@ article {
         <option value="Utah">Utah</option>
         </select>
         </form></li>
-        <br><br>
+        <br>
     <li>Select Starting Locaiton</li>
     <li>
         <form action="/action_page.php">
         <input name="location" type="text">
         </form></li>  
-      <br><br>
+      <br>
     <li>Select Time of Day</li>
      <li>
           <form>
@@ -85,15 +89,26 @@ article {
               </select>
             </form> 
       </li>
-      <br><br>
+      <br>
     <li><button type="button">CALCULATE</button></li>
   </ul>
 </nav>
 
 <article>
-  <h1>MAP</h1>
-  <p>This is where our awesome interactive map would go. Unfortuantely I have no idea how to do that yet.</p>
-  <p>There also might be some other interactive stuff we can add to the map.</p>
+  <div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 </article>
 
 <footer>Team Geoid No Rights Reserved</footer>
