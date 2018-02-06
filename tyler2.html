@@ -8,29 +8,26 @@ div.container {
 }
 header, footer {
     padding: 1em;
-    color: white;
+    color: moccasin;
     background-color: navy;
-    clear: left;
+    clear: both;
     text-align: center;
 }
 nav {
     float: left;
-    max-width: 160px;
-    margin: 0;
+    max-width: 200px;
+    margin: 1;
     padding: 1em;
+    text-align: center;
+    color: moccasin;
+    background-color: cornflowerblue;
 }
 nav ul {
     list-style-type: none;
     padding: 0;
-}
-   
-nav ul a {
-    text-decoration: none;
+    text-align: center;
 }
 article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
     overflow: hidden;
 }
 </style>
@@ -45,20 +42,12 @@ article {
   
 <nav>
   <ul>
-    <li>Select State</li>
-    <li><form action="/action_page.php">
-        <select name="States">
-        <option value="California">California</option>
-        <option value="Utah">Utah</option>
-        </select>
-        </form></li>
-        <br><br>
     <li>Select Starting Locaiton</li>
     <li>
-        <form action="/action_page.php">
+        <form action="">
         <input name="location" type="text">
         </form></li>  
-      <br><br>
+      <br>
     <li>Select Time of Day</li>
      <li>
           <form>
@@ -85,15 +74,13 @@ article {
               </select>
             </form> 
       </li>
-      <br><br>
+      <br>
     <li><button type="button">CALCULATE</button></li>
   </ul>
 </nav>
 
 <article>
-  <h1>MAP</h1>
-  <p>This is where our awesome interactive map would go. Unfortuantely I have no idea how to do that yet.</p>
-  <p>There also might be some other interactive stuff we can add to the map.</p>
+ <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="utahroads" src="//byu-mfidl.maps.arcgis.com/apps/Embed/index.html?webmap=6673f14c7b5a444ebd650a038599984f&amp;extent=-115.646,37.7351,-107.5326,41.2894&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&disable_scroll=false&theme=dark"></iframe></div>
 </article>
 
 <footer>Team Geoid No Rights Reserved</footer>
